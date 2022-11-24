@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		210FCEEA292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCEE9292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift */; };
+		210FCEEC292F9F43003BBE30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCEEB292F9F43003BBE30 /* ContentView.swift */; };
+		210FCEEE292F9F44003BBE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210FCEED292F9F44003BBE30 /* Assets.xcassets */; };
+		210FCEF1292F9F44003BBE30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210FCEF0292F9F44003BBE30 /* Preview Assets.xcassets */; };
+		210FCEFB292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCEFA292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.swift */; };
+		210FCF05292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCF04292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.swift */; };
+		210FCF07292F9F44003BBE30 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCF06292F9F44003BBE30 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		210FCEF7292F9F44003BBE30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 210FCEDE292F9F43003BBE30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210FCEE5292F9F43003BBE30;
+			remoteInfo = FetchGerosRandomJsonURL;
+		};
+		210FCF01292F9F44003BBE30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 210FCEDE292F9F43003BBE30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210FCEE5292F9F43003BBE30;
+			remoteInfo = FetchGerosRandomJsonURL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		210FCEE6292F9F43003BBE30 /* FetchGerosRandomJsonURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchGerosRandomJsonURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		210FCEE9292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGerosRandomJsonURLApp.swift; sourceTree = "<group>"; };
+		210FCEEB292F9F43003BBE30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		210FCEED292F9F44003BBE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		210FCEF0292F9F44003BBE30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		210FCEF6292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchGerosRandomJsonURLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		210FCEFA292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGerosRandomJsonURLTests.swift; sourceTree = "<group>"; };
+		210FCF00292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchGerosRandomJsonURLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		210FCF04292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGerosRandomJsonURLUITests.swift; sourceTree = "<group>"; };
+		210FCF06292F9F44003BBE30 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGerosRandomJsonURLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		210FCEE3292F9F43003BBE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210FCEF3292F9F44003BBE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210FCEFD292F9F44003BBE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		210FCEDD292F9F43003BBE30 = {
+			isa = PBXGroup;
+			children = (
+				210FCEE8292F9F43003BBE30 /* FetchGerosRandomJsonURL */,
+				210FCEF9292F9F44003BBE30 /* FetchGerosRandomJsonURLTests */,
+				210FCF03292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests */,
+				210FCEE7292F9F43003BBE30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		210FCEE7292F9F43003BBE30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				210FCEE6292F9F43003BBE30 /* FetchGerosRandomJsonURL.app */,
+				210FCEF6292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.xctest */,
+				210FCF00292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		210FCEE8292F9F43003BBE30 /* FetchGerosRandomJsonURL */ = {
+			isa = PBXGroup;
+			children = (
+				210FCEE9292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift */,
+				210FCEEB292F9F43003BBE30 /* ContentView.swift */,
+				210FCEED292F9F44003BBE30 /* Assets.xcassets */,
+				210FCEEF292F9F44003BBE30 /* Preview Content */,
+			);
+			path = FetchGerosRandomJsonURL;
+			sourceTree = "<group>";
+		};
+		210FCEEF292F9F44003BBE30 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				210FCEF0292F9F44003BBE30 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		210FCEF9292F9F44003BBE30 /* FetchGerosRandomJsonURLTests */ = {
+			isa = PBXGroup;
+			children = (
+				210FCEFA292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.swift */,
+			);
+			path = FetchGerosRandomJsonURLTests;
+			sourceTree = "<group>";
+		};
+		210FCF03292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				210FCF04292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.swift */,
+				210FCF06292F9F44003BBE30 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift */,
+			);
+			path = FetchGerosRandomJsonURLUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 210FCF0A292F9F44003BBE30 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURL" */;
+			buildPhases = (
+				210FCEE2292F9F43003BBE30 /* Sources */,
+				210FCEE3292F9F43003BBE30 /* Frameworks */,
+				210FCEE4292F9F43003BBE30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FetchGerosRandomJsonURL;
+			productName = FetchGerosRandomJsonURL;
+			productReference = 210FCEE6292F9F43003BBE30 /* FetchGerosRandomJsonURL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		210FCEF5292F9F44003BBE30 /* FetchGerosRandomJsonURLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 210FCF0D292F9F44003BBE30 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURLTests" */;
+			buildPhases = (
+				210FCEF2292F9F44003BBE30 /* Sources */,
+				210FCEF3292F9F44003BBE30 /* Frameworks */,
+				210FCEF4292F9F44003BBE30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				210FCEF8292F9F44003BBE30 /* PBXTargetDependency */,
+			);
+			name = FetchGerosRandomJsonURLTests;
+			productName = FetchGerosRandomJsonURLTests;
+			productReference = 210FCEF6292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		210FCEFF292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 210FCF10292F9F44003BBE30 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURLUITests" */;
+			buildPhases = (
+				210FCEFC292F9F44003BBE30 /* Sources */,
+				210FCEFD292F9F44003BBE30 /* Frameworks */,
+				210FCEFE292F9F44003BBE30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				210FCF02292F9F44003BBE30 /* PBXTargetDependency */,
+			);
+			name = FetchGerosRandomJsonURLUITests;
+			productName = FetchGerosRandomJsonURLUITests;
+			productReference = 210FCF00292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		210FCEDE292F9F43003BBE30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					210FCEE5292F9F43003BBE30 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					210FCEF5292F9F44003BBE30 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 210FCEE5292F9F43003BBE30;
+					};
+					210FCEFF292F9F44003BBE30 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 210FCEE5292F9F43003BBE30;
+					};
+				};
+			};
+			buildConfigurationList = 210FCEE1292F9F43003BBE30 /* Build configuration list for PBXProject "FetchGerosRandomJsonURL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 210FCEDD292F9F43003BBE30;
+			productRefGroup = 210FCEE7292F9F43003BBE30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */,
+				210FCEF5292F9F44003BBE30 /* FetchGerosRandomJsonURLTests */,
+				210FCEFF292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		210FCEE4292F9F43003BBE30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210FCEF1292F9F44003BBE30 /* Preview Assets.xcassets in Resources */,
+				210FCEEE292F9F44003BBE30 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210FCEF4292F9F44003BBE30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210FCEFE292F9F44003BBE30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		210FCEE2292F9F43003BBE30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210FCEEC292F9F43003BBE30 /* ContentView.swift in Sources */,
+				210FCEEA292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210FCEF2292F9F44003BBE30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210FCEFB292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210FCEFC292F9F44003BBE30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210FCF05292F9F44003BBE30 /* FetchGerosRandomJsonURLUITests.swift in Sources */,
+				210FCF07292F9F44003BBE30 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		210FCEF8292F9F44003BBE30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */;
+			targetProxy = 210FCEF7292F9F44003BBE30 /* PBXContainerItemProxy */;
+		};
+		210FCF02292F9F44003BBE30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */;
+			targetProxy = 210FCF01292F9F44003BBE30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		210FCF08292F9F44003BBE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		210FCF09292F9F44003BBE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		210FCF0B292F9F44003BBE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FetchGerosRandomJsonURL/Preview Content\"";
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		210FCF0C292F9F44003BBE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FetchGerosRandomJsonURL/Preview Content\"";
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		210FCF0E292F9F44003BBE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchGerosRandomJsonURL.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchGerosRandomJsonURL";
+			};
+			name = Debug;
+		};
+		210FCF0F292F9F44003BBE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchGerosRandomJsonURL.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchGerosRandomJsonURL";
+			};
+			name = Release;
+		};
+		210FCF11292F9F44003BBE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FetchGerosRandomJsonURL;
+			};
+			name = Debug;
+		};
+		210FCF12292F9F44003BBE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FetchGerosRandomJsonURL;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		210FCEE1292F9F43003BBE30 /* Build configuration list for PBXProject "FetchGerosRandomJsonURL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210FCF08292F9F44003BBE30 /* Debug */,
+				210FCF09292F9F44003BBE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		210FCF0A292F9F44003BBE30 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210FCF0B292F9F44003BBE30 /* Debug */,
+				210FCF0C292F9F44003BBE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		210FCF0D292F9F44003BBE30 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210FCF0E292F9F44003BBE30 /* Debug */,
+				210FCF0F292F9F44003BBE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		210FCF10292F9F44003BBE30 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210FCF11292F9F44003BBE30 /* Debug */,
+				210FCF12292F9F44003BBE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 210FCEDE292F9F43003BBE30 /* Project object */;
+}

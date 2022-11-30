@@ -9,11 +9,30 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @State var listCount = 0
     var body: some View {
-        FetchedDataView()
+        NavigationView {
+            List {
+                ForEach(0..<listCount, id: \.self) {_ in
+                    Section(header: Button{ //ugly, cheating, works tho ¯\_(ツ)_/¯
+                        print("pressed")                        
+                    } label: {
+                        Text("Delete")
+                    }){
+                        FetchedDataView()
+                    }
+                }
+            }
+            .toolbar {
+                Button{
+                    listCount += 1
+                } label: {
+                    Text("Add")
+                }
+            }
+        }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

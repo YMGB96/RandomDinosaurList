@@ -11,38 +11,36 @@ struct FetchedDataView: View {
     @State var image = "leaf.fill"
     @State var title = "Label goes here"
     @State var text = "text goes here"
-    @State var minWordCount = 0
-    @State var maxWordCount = 0
+    @State var didAppear = false
     var body: some View {
         VStack{
-            Button {
-                loadJson(urlString: "https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10") { result in
-                    switch result {
-                    case .success(let data):
-                        let decodedData = parseJson(jsonData: data)
-                        image = decodedData.icon
-                        title = decodedData.label
-                        text = decodedData.text
-                        minWordCount = decodedData.minWordCount
-                        maxWordCount = decodedData.maxWordCount
-                    case .failure(let error):
-                        print(error)
-                    }
-                }
-            } label: {
-                Text("Fetch Json")
-                    .multilineTextAlignment(.center)
-            }
-            VStack {
+            if (title != "Label goes here"){
                 HStack {
                     Image(systemName: image)
                         .imageScale(.large)
                     Text(title)
                         .font(.title)
                 }
+            }
+        }
+        .onAppear() {
+            if (didAppear == false){
+                JsonData.loadJson(urlString: "https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10") { result in
+                    switch result {
+                    case .success(let data):
+                        image = data.icon
+                        title = data.label
+                        text = data.text
+                        didAppear = true
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+            }
+        }
+        if (title != "Label goes here") {
+            VStack {
                 Text(text)
-                Text("min \(minWordCount) Words")
-                Text("max \(maxWordCount) Words")
             }
             .padding()
         }

@@ -20,12 +20,17 @@ struct ContentView: View {
                 .onDelete (perform: removeRows)
             }
             .toolbar {
+                Text("Random Dinosaurs")
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .padding(.all)
                 Button{
                     fetchedDataViews.append(FetchedDataView(id: listCount))
                     listCount += 1
                 } label: {
                     Text("Add")
                 }
+                .padding(.vertical)
             }
         }
     }

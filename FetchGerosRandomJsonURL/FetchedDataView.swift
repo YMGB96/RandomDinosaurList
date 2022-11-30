@@ -24,6 +24,8 @@ struct FetchedDataView: Identifiable, View {
                             .font(.title)
                     }
                     Text(text)
+                        .multilineTextAlignment(.center)
+                        .padding([.top, .leading, .trailing])
                 }
                 .padding()
             }

@@ -10,21 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State var listCount = 0
+    @State private var fetchedDataViews = [FetchedDataView]()
     var body: some View {
         NavigationView {
             List {
-                ForEach(0..<listCount, id: \.self) {_ in
-                    Section(header: Button{ //ugly, cheating, works tho ¯\_(ツ)_/¯
-                        print("pressed")                        
-                    } label: {
-                        Text("Delete")
-                    }){
-                        FetchedDataView()
-                    }
+                ForEach(fetchedDataViews) {_ in 
+                    FetchedDataView(id: listCount)
                 }
+                .onDelete (perform: removeRows)
             }
             .toolbar {
                 Button{
+                    fetchedDataViews.append(FetchedDataView(id: listCount))
                     listCount += 1
                 } label: {
                     Text("Add")
@@ -32,6 +29,11 @@ struct ContentView: View {
             }
         }
     }
+    func removeRows(at offsets: IndexSet) {
+        print("deleted")
+        fetchedDataViews.remove(atOffsets: offsets)
+    }
+
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

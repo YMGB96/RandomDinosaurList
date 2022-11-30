@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct FetchedDataView: View {
+struct FetchedDataView: Identifiable, View {
+    var id: Int
     @State var image = "leaf.fill"
     @State var title = "Label goes here"
     @State var text = "text goes here"
@@ -15,12 +16,16 @@ struct FetchedDataView: View {
     var body: some View {
         VStack{
             if (title != "Label goes here"){
-                HStack {
-                    Image(systemName: image)
-                        .imageScale(.large)
-                    Text(title)
-                        .font(.title)
+                VStack {
+                    HStack {
+                        Image(systemName: image)
+                            .imageScale(.large)
+                        Text(title)
+                            .font(.title)
+                    }
+                    Text(text)
                 }
+                .padding()
             }
         }
         .onAppear() {
@@ -38,17 +43,11 @@ struct FetchedDataView: View {
                 }
             }
         }
-        if (title != "Label goes here") {
-            VStack {
-                Text(text)
-            }
-            .padding()
-        }
     }
 }
 
 struct FetchedDataView_Previews: PreviewProvider {
     static var previews: some View {
-        FetchedDataView()
+        FetchedDataView(id: 1)
     }
 }

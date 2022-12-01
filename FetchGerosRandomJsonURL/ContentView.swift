@@ -31,6 +31,7 @@ struct ContentView: View {
                     Text("Add")
                 }
                 .padding(.vertical)
+                .accessibilityIdentifier("Add Button")
             }
         }
     }

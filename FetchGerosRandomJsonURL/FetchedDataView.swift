@@ -33,7 +33,7 @@ struct FetchedDataView: Identifiable, View {
             }
         }
         .onAppear() { 
-            if (didAppear == false){
+            if (didAppear == false){ //not helpful when testing?
                 JsonData.loadJson(urlString: "https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10") { result in
                     switch result {
                     case .success(let data):

@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @State var listCount = 0
+    @State private var listCount = 0
     @State private var fetchedDataViews = [FetchedDataView]()
     var body: some View {
         NavigationView {
@@ -35,10 +35,9 @@ struct ContentView: View {
         }
     }
     func removeRows(at offsets: IndexSet) {
-        print("deleted")
         fetchedDataViews.remove(atOffsets: offsets)
     }
-
+    
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

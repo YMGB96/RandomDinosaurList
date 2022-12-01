@@ -20,8 +20,10 @@ struct FetchedDataView: Identifiable, View {
                     HStack {
                         Image(systemName: image)
                             .imageScale(.large)
+                            .foregroundColor(.accentColor)
                         Text(title)
                             .font(.title)
+                            .bold()
                     }
                     Text(text)
                         .multilineTextAlignment(.center)
@@ -30,7 +32,7 @@ struct FetchedDataView: Identifiable, View {
                 .padding()
             }
         }
-        .onAppear() {
+        .onAppear() { 
             if (didAppear == false){
                 JsonData.loadJson(urlString: "https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10") { result in
                     switch result {

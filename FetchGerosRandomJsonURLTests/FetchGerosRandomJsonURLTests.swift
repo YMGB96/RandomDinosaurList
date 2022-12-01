@@ -23,7 +23,7 @@ final class FetchGerosRandomJsonURLTests: XCTestCase {
 
     func testFetchedDataViewFetchesOnAppear() {
         XCTAssertEqual(testFetchedDataView.title, "Label goes here", "Should only fetch when it appears in the UI")
-        //some code that pretends that testFetchedDataView did appear in the UI or actually make it appear?
+        //some code that pretends that testFetchedDataView did appear in the UI or actually make it appear? (XCUIApplication()?)
         //some code that delays the next test by 4 seconds because of the manually set delay by Gero (XCTWaiter?)
         //XCTAssertNotEqual(testFetchedDataView.title, "Label goes here", "Should have fetched now, placeholder should be replaced")
     }

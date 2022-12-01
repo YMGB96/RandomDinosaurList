@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2106A5982938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106A5972938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.swift */; };
+		2106A59A2938BEE5009D0187 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106A5992938BEE5009D0187 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift */; };
 		210FCEEA292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCEE9292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift */; };
 		210FCEEC292F9F43003BBE30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCEEB292F9F43003BBE30 /* ContentView.swift */; };
 		210FCEEE292F9F44003BBE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210FCEED292F9F44003BBE30 /* Assets.xcassets */; };
@@ -24,6 +26,13 @@
 			remoteGlobalIDString = 210FCEE5292F9F43003BBE30;
 			remoteInfo = FetchGerosRandomJsonURL;
 		};
+		2106A59B2938BEE5009D0187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 210FCEDE292F9F43003BBE30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210FCEE5292F9F43003BBE30;
+			remoteInfo = FetchGerosRandomJsonURL;
+		};
 		210FCEF7292F9F44003BBE30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 210FCEDE292F9F43003BBE30 /* Project object */;
@@ -35,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		2106A5862938B953009D0187 /* FetchGerosRandomJsonURLUITestsTarget.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchGerosRandomJsonURLUITestsTarget.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2106A5952938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchGerosRandomJsonURLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2106A5972938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGerosRandomJsonURLUITests.swift; sourceTree = "<group>"; };
+		2106A5992938BEE5009D0187 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGerosRandomJsonURLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		210FCEE6292F9F43003BBE30 /* FetchGerosRandomJsonURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchGerosRandomJsonURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		210FCEE9292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGerosRandomJsonURLApp.swift; sourceTree = "<group>"; };
 		210FCEEB292F9F43003BBE30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +60,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		2106A5832938B953009D0187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2106A5922938BEE5009D0187 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,11 +90,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2106A5962938BEE5009D0187 /* FetchGerosRandomJsonURLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2106A5972938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.swift */,
+				2106A5992938BEE5009D0187 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift */,
+			);
+			path = FetchGerosRandomJsonURLUITests;
+			sourceTree = "<group>";
+		};
 		210FCEDD292F9F43003BBE30 = {
 			isa = PBXGroup;
 			children = (
 				210FCEE8292F9F43003BBE30 /* FetchGerosRandomJsonURL */,
 				210FCEF9292F9F44003BBE30 /* FetchGerosRandomJsonURLTests */,
+				2106A5962938BEE5009D0187 /* FetchGerosRandomJsonURLUITests */,
 				210FCEE7292F9F43003BBE30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +115,7 @@
 				210FCEE6292F9F43003BBE30 /* FetchGerosRandomJsonURL.app */,
 				210FCEF6292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.xctest */,
 				2106A5862938B953009D0187 /* FetchGerosRandomJsonURLUITestsTarget.xctest */,
+				2106A5952938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +170,24 @@
 			productReference = 2106A5862938B953009D0187 /* FetchGerosRandomJsonURLUITestsTarget.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2106A5942938BEE5009D0187 /* FetchGerosRandomJsonURLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2106A59F2938BEE5009D0187 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURLUITests" */;
+			buildPhases = (
+				2106A5912938BEE5009D0187 /* Sources */,
+				2106A5922938BEE5009D0187 /* Frameworks */,
+				2106A5932938BEE5009D0187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2106A59C2938BEE5009D0187 /* PBXTargetDependency */,
+			);
+			name = FetchGerosRandomJsonURLUITests;
+			productName = FetchGerosRandomJsonURLUITests;
+			productReference = 2106A5952938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 210FCF0A292F9F44003BBE30 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURL" */;
@@ -189,6 +237,10 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 210FCEE5292F9F43003BBE30;
 					};
+					2106A5942938BEE5009D0187 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 210FCEE5292F9F43003BBE30;
+					};
 					210FCEE5292F9F43003BBE30 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -214,12 +266,20 @@
 				210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */,
 				210FCEF5292F9F44003BBE30 /* FetchGerosRandomJsonURLTests */,
 				2106A5852938B953009D0187 /* FetchGerosRandomJsonURLUITestsTarget */,
+				2106A5942938BEE5009D0187 /* FetchGerosRandomJsonURLUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2106A5842938B953009D0187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2106A5932938BEE5009D0187 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,6 +312,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2106A5912938BEE5009D0187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2106A5982938BEE5009D0187 /* FetchGerosRandomJsonURLUITests.swift in Sources */,
+				2106A59A2938BEE5009D0187 /* FetchGerosRandomJsonURLUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		210FCEE2292F9F43003BBE30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +347,11 @@
 			isa = PBXTargetDependency;
 			target = 210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */;
 			targetProxy = 2106A58C2938B953009D0187 /* PBXContainerItemProxy */;
+		};
+		2106A59C2938BEE5009D0187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 210FCEE5292F9F43003BBE30 /* FetchGerosRandomJsonURL */;
+			targetProxy = 2106A59B2938BEE5009D0187 /* PBXContainerItemProxy */;
 		};
 		210FCEF8292F9F44003BBE30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -307,12 +381,47 @@
 		2106A5902938B953009D0187 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"BUNDLE_LOADER[arch=*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DCSHCC634D;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURLUITestsTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FetchGerosRandomJsonURL;
+			};
+			name = Release;
+		};
+		2106A59D2938BEE5009D0187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FetchGerosRandomJsonURL;
+			};
+			name = Debug;
+		};
+		2106A59E2938BEE5009D0187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DCSHCC634D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdi.FetchGerosRandomJsonURLUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -541,6 +650,15 @@
 			buildConfigurations = (
 				2106A58F2938B953009D0187 /* Debug */,
 				2106A5902938B953009D0187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2106A59F2938BEE5009D0187 /* Build configuration list for PBXNativeTarget "FetchGerosRandomJsonURLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2106A59D2938BEE5009D0187 /* Debug */,
+				2106A59E2938BEE5009D0187 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

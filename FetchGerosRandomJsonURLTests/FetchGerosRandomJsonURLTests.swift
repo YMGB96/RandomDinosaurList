@@ -23,9 +23,9 @@ final class FetchGerosRandomJsonURLTests: XCTestCase {
 
     func testFetchedDataViewFetchesOnAppear() {
         XCTAssertEqual(testFetchedDataView.title, "Label goes here", "Should only fetch when it appears in the UI")
-        //some code that pretends that testFetchedDataView did appear in the UI or actually make it appear? (XCUIApplication()?)
+        //some code that pretends that testFetchedDataView did appear in the UI or actually make it appear?
         //some code that delays the next test by 4 seconds because of the manually set delay by Gero (XCTWaiter?)
-        //XCTAssertNotEqual(testFetchedDataView.title, "Label goes here", "Should have fetched now, placeholder should be replaced")
+//        XCTAssertNotEqual(testFetchedDataView.title, "Label goes here", "Should have fetched now, placeholder should be replaced")
     }
     
     func testURLIsReachable() {
@@ -38,20 +38,5 @@ final class FetchGerosRandomJsonURLTests: XCTestCase {
     
     func testDeleteOfItemInList() {
         //somehow test that an item in the list is truly deleted when it should be
-    }
-    
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
 }

@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(fetchedDataViews) {_ in 
+                ForEach(fetchedDataViews) { _ in
                     FetchedDataView(id: listCount)
                 }
                 .onDelete (perform: removeRows)

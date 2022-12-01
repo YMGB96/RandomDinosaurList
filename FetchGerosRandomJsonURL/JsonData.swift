@@ -20,7 +20,7 @@ struct JsonData: Codable {
         if let url = URL(string: urlString) {
             let urlTask = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
                 if let error = error {
-                    completion(.failure(error))
+                    DispatchQueue.main.async { completion(.failure(error)) }
                 }
                 guard let data = data, let httpResponse = response as? HTTPURLResponse,
                       httpResponse.statusCode == 200 else {

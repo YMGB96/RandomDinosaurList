@@ -10,11 +10,13 @@ import Foundation
 class JsonFetcher: ObservableObject {
     
     @Published var fetchedData = [FetchedDataFile]()
+    @Published var isLoading = false
     
     func loadJson(){
         load(urlString: "https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10") { result in
             switch result {
             case .success(let data):
+                self.isLoading = false
                 self.fetchedData.append(FetchedDataFile(image: data.icon, title: data.label, text: data.text))
             case .failure(let error):
                 print(error)

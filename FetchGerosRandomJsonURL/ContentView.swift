@@ -9,13 +9,14 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @State private var listCount = 0
-    @State private var fetchedDataViews = [FetchedDataView]()
+    
+    @StateObject var jsonFetcher = JsonFetcher()
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(fetchedDataViews) { _ in
-                    FetchedDataView(id: listCount)
+                ForEach(jsonFetcher.fetchedData) { fetchedData in
+                    FetchedDataView(image: fetchedData.image, title: fetchedData.title, text: fetchedData.text)
                 }
                 .onDelete (perform: removeRows)
             }
@@ -24,19 +25,15 @@ struct ContentView: View {
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .padding(.all)
-                Button{
-                    fetchedDataViews.append(FetchedDataView(id: listCount))
-                    listCount += 1
-                } label: {
-                    Text("Add")
-                }
+                Button("Add", action: {
+                    jsonFetcher.loadJson()
+                })
                 .padding(.vertical)
-                .accessibilityIdentifier("Add Button")
             }
         }
     }
     func removeRows(at offsets: IndexSet) {
-        fetchedDataViews.remove(atOffsets: offsets)
+        jsonFetcher.fetchedData.remove(atOffsets: offsets)
     }
     
 }

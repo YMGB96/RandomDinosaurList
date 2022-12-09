@@ -16,7 +16,8 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(jsonFetcher.fetchedData) { fetchedData in
-                    NavigationLink(destination: FetchedDataView(image: fetchedData.image, title: fetchedData.title, text: fetchedData.text)) {
+                    NavigationLink(destination: FetchedDataView(image: fetchedData.image,
+                                                                title: fetchedData.title, text: fetchedData.text)) {
                         Image(systemName: fetchedData.image)
                             .imageScale(.medium)
                             .foregroundColor(.accentColor)
@@ -34,7 +35,6 @@ struct ContentView: View {
                         .padding(.horizontal)
                 } else {
                     Button("Add", action: {
-                        jsonFetcher.isLoading = true
                         jsonFetcher.loadJson()
                     })
                     

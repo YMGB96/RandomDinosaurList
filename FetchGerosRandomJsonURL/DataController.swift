@@ -2,7 +2,7 @@
 //  DataController.swift
 //  FetchGerosRandomJsonURL
 //
-//  Created by Yannick Brands on 07.12.22.
+//  Created by Yannick Brands on 05.12.22.
 //
 
 import CoreData

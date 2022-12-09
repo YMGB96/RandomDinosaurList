@@ -13,10 +13,13 @@ class JsonFetcher: ObservableObject {
     @Published var isLoading = false
     
     func loadJson(){
+        isLoading = true
         load(urlString: "https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10") { result in
+            defer {
+                self.isLoading = false
+            }
             switch result {
             case .success(let data):
-                self.isLoading = false
                 self.fetchedData.append(FetchedDataFile(image: data.icon, title: data.label, text: data.text))
             case .failure(let error):
                 print(error)
@@ -28,10 +31,11 @@ class JsonFetcher: ObservableObject {
                 let urlTask = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
                     if let error = error {
                         DispatchQueue.main.async { completion(.failure(error)) }
+                        return
                     }
                     guard let data = data, let httpResponse = response as? HTTPURLResponse,
                           httpResponse.statusCode == 200 else {
-                        DispatchQueue.main.async { completion(.failure(error!)) }
+                        DispatchQueue.main.async { completion(.failure(ResponseError.badStatusCode)) }
                         return
                     }
                     do {
@@ -44,6 +48,9 @@ class JsonFetcher: ObservableObject {
                 urlTask.resume()
             }
         }
+    }
+    enum ResponseError: Error {
+        case badStatusCode
     }
 }
 

@@ -33,7 +33,6 @@ struct RandomListsView: View {
                         .padding(.horizontal)
                 } else {
                     Button("Add", action: {
-                        jsonFetcher.isLoading = true
                         jsonFetcher.loadJson()
                     })
                     

@@ -16,7 +16,7 @@
 		210FCEFB292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCEFA292F9F44003BBE30 /* FetchGerosRandomJsonURLTests.swift */; };
 		210FCF14292F9F7F003BBE30 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCF13292F9F7F003BBE30 /* JsonData.swift */; };
 		210FCF182930BED0003BBE30 /* FetchedDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FCF172930BED0003BBE30 /* FetchedDataView.swift */; };
-		2152DCC62940A96B00ADB67E /* Dinos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCC42940A96B00ADB67E /* Dinos.xcdatamodeld */; };
+		2152DCC62940A96B00ADB67E /* FetchedDinoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCC42940A96B00ADB67E /* FetchedDinoList.xcdatamodeld */; };
 		2152DCC82940A9E100ADB67E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCC72940A9E100ADB67E /* DataController.swift */; };
 		2152DCCA29431E8300ADB67E /* RandomListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCC929431E8300ADB67E /* RandomListsView.swift */; };
 		2152DCCC29431EFA00ADB67E /* SavedListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCCB29431EFA00ADB67E /* SavedListsView.swift */; };
@@ -133,7 +133,7 @@
 		210FCEE8292F9F43003BBE30 /* FetchGerosRandomJsonURL */ = {
 			isa = PBXGroup;
 			children = (
-				2152DCC42940A96B00ADB67E /* Dinos.xcdatamodeld */,
+				2152DCC42940A96B00ADB67E /* FetchedDinoList.xcdatamodeld */,
 				21A251A6293F552400F709F7 /* Views */,
 				21A251A5293F551900F709F7 /* Models */,
 				210FCEE9292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift */,
@@ -364,7 +364,7 @@
 				21A251A4293DD9EE00F709F7 /* JsonFetcher.swift in Sources */,
 				210FCEEA292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift in Sources */,
 				210FCF14292F9F7F003BBE30 /* JsonData.swift in Sources */,
-				2152DCC62940A96B00ADB67E /* Dinos.xcdatamodeld in Sources */,
+				2152DCC62940A96B00ADB67E /* FetchedDinoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,13 +729,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2152DCC42940A96B00ADB67E /* Dinos.xcdatamodeld */ = {
+		2152DCC42940A96B00ADB67E /* FetchedDinoList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				2152DCC52940A96B00ADB67E /* Dinos.xcdatamodel */,
 			);
 			currentVersion = 2152DCC52940A96B00ADB67E /* Dinos.xcdatamodel */;
-			path = Dinos.xcdatamodeld;
+			path = FetchedDinoList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

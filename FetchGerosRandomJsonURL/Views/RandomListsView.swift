@@ -15,43 +15,37 @@ struct RandomListsView: View {
         NavigationView {
             List {
                 ForEach(jsonFetcher.fetchedData) { fetchedData in
-                    NavigationLink(destination: FetchedDataView(image: fetchedData.image, title: fetchedData.title, text: fetchedData.text)) {
+                    NavigationLink(destination: FetchedDataView(image: fetchedData.image,
+                                                                title: fetchedData.title, text: fetchedData.text, newList: true)) {
                         Image(systemName: fetchedData.image)
+                            .renderingMode(.original)
                             .imageScale(.medium)
-                            .foregroundColor(.accentColor)
                         Text(fetchedData.title)
                             .font(.title)
                             .bold()
                     }
                 }
                 .onDelete (perform: removeRows)
-                .onMove(perform: move)
             }
+            .navigationTitle("New Random Lists")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 if (jsonFetcher.isLoading == true){
                     ProgressView()
-                        .padding(.horizontal)
                 } else {
-                    Button("Add", action: {
+                    Button(action: {
                         jsonFetcher.loadJson()
+                    }, label: {
+                        Image(systemName: "plus.app.fill")
                     })
                     
                 }
-                Text("New Random Lists")
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-                    .bold()
-                EditButton()
             }
         }
     }
     func removeRows(at offsets: IndexSet) {
         jsonFetcher.fetchedData.remove(atOffsets: offsets)
     }
-    func move(from source: IndexSet, to destination: Int) {
-        jsonFetcher.fetchedData.move(fromOffsets: source, toOffset: destination)
-    }
-    
 }
 
 struct RandomListsView_Previews: PreviewProvider {

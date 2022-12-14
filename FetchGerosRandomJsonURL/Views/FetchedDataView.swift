@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct FetchedDataView: View {
     
@@ -36,11 +37,12 @@ struct FetchedDataView: View {
             .toolbar {
                 if newList {
                     Button (action: {
-                        let newList = FetchedDinoList(context: moc)
+                        let newList = Dinos (context: moc)
                         newList.id = UUID()
                         newList.image = image
                         newList.title = title
                         newList.text = text
+                        newList.date = Date()
                         
                         try? moc.save()
                     }, label: {

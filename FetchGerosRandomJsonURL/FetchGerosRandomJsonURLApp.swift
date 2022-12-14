@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct FetchGerosRandomJsonURLApp: App {
-    @StateObject private var dataController = DataController()
+    private static var dataController = DataController()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, dataController.container.viewContext)
+                .environment(\.managedObjectContext, Self.dataController.container.viewContext)
         }
     }
 }

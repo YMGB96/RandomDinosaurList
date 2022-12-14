@@ -49,7 +49,11 @@ struct RandomListsView: View {
 }
 
 struct RandomListsView_Previews: PreviewProvider {
+    static let dataController = SavedListsView_Previews.dataController
+    
     static var previews: some View {
         RandomListsView()
+            .environment(\.managedObjectContext,
+                          dataController.container.viewContext)
     }
 }

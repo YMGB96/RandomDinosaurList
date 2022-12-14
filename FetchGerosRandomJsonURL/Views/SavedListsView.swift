@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SavedListsView: View {
     
-    @FetchRequest(sortDescriptors: []) var dinoLists: FetchedResults<FetchedDinoList>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date)]) var dinoLists: FetchedResults<Dinos>
     @Environment(\.managedObjectContext) var moc
     
     
@@ -33,8 +33,8 @@ struct SavedListsView: View {
             .navigationTitle("Saved Lists")
             .navigationBarTitleDisplayMode(.inline)
         }
-        
     }
+    
     func deleteDinoList (at offsets: IndexSet) {
         for offset in offsets {
             let list = dinoLists[offset]
@@ -45,7 +45,23 @@ struct SavedListsView: View {
 }
 
 struct SavedListsView_Previews: PreviewProvider {
+    static let dataController: DataController = {
+        let retVal = DataController(isInMemory: true)
+        let context = retVal.container.viewContext
+        for index in 0..<5 {
+            let dino = Dinos(context: context)
+            dino.id = UUID()
+            dino.date = Date()
+            dino.title = "Test Dino \(index)"
+            dino.text = "Test Dino \(index) example text"
+            dino.image = "car.fill"
+        }
+        return retVal
+    }()
+    
     static var previews: some View {
+        let context = dataController.container.viewContext
         SavedListsView()
+            .environment(\.managedObjectContext, context)
     }
 }

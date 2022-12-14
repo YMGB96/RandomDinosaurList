@@ -14,7 +14,7 @@ class JsonFetcher: ObservableObject {
     
     func loadJson(){
         isLoading = true
-        load(urlString: "https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10") { result in
+        load(url: semiRandomURLConstructor()) { result in
             defer {
                 self.isLoading = false
             }
@@ -26,27 +26,43 @@ class JsonFetcher: ObservableObject {
             }
         }
         
-        func load(urlString: String, completion: @escaping (Result<JsonData, Error>) -> Void) {
-            if let url = URL(string: urlString) {
-                let urlTask = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
-                    if let error = error {
-                        DispatchQueue.main.async { completion(.failure(error)) }
-                        return
-                    }
-                    guard let data = data, let httpResponse = response as? HTTPURLResponse,
-                          httpResponse.statusCode == 200 else {
-                        DispatchQueue.main.async { completion(.failure(ResponseError.badStatusCode)) }
-                        return
-                    }
-                    do {
-                        let decodedData = try JSONDecoder().decode(JsonData.self, from: data)
-                        DispatchQueue.main.async { completion(.success(decodedData)) }
-                    } catch {
-                        DispatchQueue.main.async { completion(.failure(error)) }
-                    }
+        func load(url: URL, completion: @escaping (Result<JsonData, Error>) -> Void) {
+            let urlTask = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
+                if let error = error {
+                    DispatchQueue.main.async { completion(.failure(error)) }
+                    return
                 }
-                urlTask.resume()
+                guard let data = data, let httpResponse = response as? HTTPURLResponse,
+                      httpResponse.statusCode == 200 else {
+                    DispatchQueue.main.async { completion(.failure(ResponseError.badStatusCode)) }
+                    return
+                }
+                do {
+                    let decodedData = try JSONDecoder().decode(JsonData.self, from: data)
+                    DispatchQueue.main.async { completion(.success(decodedData)) }
+                } catch {
+                    DispatchQueue.main.async { completion(.failure(error)) }
+                }
             }
+            urlTask.resume()
+        }
+        
+        func semiRandomURLConstructor() -> URL {
+            let responseDelay = Int.random(in: 200..<2000)
+            let minWordCount = Int.random(in: 10..<30)
+            let maxWordCount = Int.random(in: minWordCount..<(minWordCount + 30))
+            
+            var urlComponents = URLComponents()
+            urlComponents.scheme = "https"
+            urlComponents.host = "codingfromhell.net"
+            urlComponents.path = "/swiftDemo/listElement/listElement"
+            
+            urlComponents.queryItems = [ URLQueryItem(name: "responseDelay", value: String(responseDelay)),
+                                         URLQueryItem(name: "minWordCount", value: String(minWordCount)),
+                                         URLQueryItem(name: "maxWordCount", value: String(maxWordCount))
+            ]
+            let url = urlComponents.url
+            return url!
         }
     }
     enum ResponseError: Error {
@@ -56,7 +72,7 @@ class JsonFetcher: ObservableObject {
 
 extension JsonFetcher {
     
-    struct FetchedDataFile: Identifiable {
+    struct FetchedDataFile: Identifiable { 
         let id = UUID()
         let image: String
         let title: String

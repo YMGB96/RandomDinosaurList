@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SavedListsView: View {
     
-    @FetchRequest(sortDescriptors: []) var dinoLists: FetchedResults<FetchedDinoList> //nach UUID sinnvoll?
+    @FetchRequest(sortDescriptors: []) var dinoLists: FetchedResults<FetchedDinoList>
     @Environment(\.managedObjectContext) var moc
     
     
@@ -29,7 +29,6 @@ struct SavedListsView: View {
                     }
                 }
                 .onDelete(perform: deleteDinoList)
-                .onMove(perform: nil)
             }
             .navigationTitle("Saved Lists")
             .navigationBarTitleDisplayMode(.inline)

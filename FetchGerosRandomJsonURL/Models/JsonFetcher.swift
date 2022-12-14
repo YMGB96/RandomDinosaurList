@@ -48,8 +48,8 @@ class JsonFetcher: ObservableObject {
         }
         
         func semiRandomURLConstructor() -> URL {
-            let responseDelay = Int.random(in: 200..<2000)
-            let minWordCount = Int.random(in: 10..<30)
+            let responseDelay = Int.random(in: 200...2000)
+            let minWordCount = Int.random(in: 10...30)
             let maxWordCount = Int.random(in: minWordCount..<(minWordCount + 30))
             
             var urlComponents = URLComponents()

@@ -15,7 +15,7 @@ struct FetchedDataView: View {
     let image: String
     let title: String
     let text: String
-    let newList: Bool
+    let previousViewWasRandomDataList: Bool
     
     var body: some View {
         NavigationView {
@@ -35,14 +35,14 @@ struct FetchedDataView: View {
             }
             .padding()
             .toolbar {
-                if newList {
+                if previousViewWasRandomDataList {
                     Button (action: {
-                        let newList = Dinos (context: moc)
-                        newList.id = UUID()
-                        newList.image = image
-                        newList.title = title
-                        newList.text = text
-                        newList.date = Date()
+                        let newEntry = Dinos (context: moc)
+                        newEntry.id = UUID()
+                        newEntry.image = image
+                        newEntry.title = title
+                        newEntry.text = text
+                        newEntry.date = Date()
                         
                         try? moc.save()
                     }, label: {
@@ -58,6 +58,6 @@ struct FetchedDataView: View {
 struct FetchedDataView_Previews: PreviewProvider {
     static var previews: some View {
         
-        FetchedDataView(image: "car.fill", title: "Dr. Ian Malcolm", text: "A bunch of dinosaurs", newList: true)
+        FetchedDataView(image: "car.fill", title: "Dr. Ian Malcolm", text: "A bunch of dinosaurs", previousViewWasRandomDataList: true)
     }
 }

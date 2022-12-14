@@ -26,6 +26,7 @@ class DataController {
         bgContext = container.newBackgroundContext()
     }
     
+//    Information mui importante!!!!
 //    var ohShit = [FetchedDinoList?]()
 //
 //    func exampleStuff() {

@@ -9,16 +9,14 @@ import SwiftUI
 
 
 struct ContentView: View {
-    
-    @StateObject var jsonFetcher = JsonFetcher()
-    
+        
     var body: some View {
         NavigationView {
             List{
-                NavigationLink("Get new lists", destination: RandomListsView())
+                NavigationLink("Get new lists", destination: RandomDataListView())
                     .font(.title)
                     .bold()
-                NavigationLink("Your saved lists", destination: SavedListsView())
+                NavigationLink("Your saved lists", destination: SavedDataListView())
                     .font(.title)
                     .bold()
             }

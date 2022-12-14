@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RandomListsView: View {
+struct RandomDataListView: View {
     
     @StateObject var jsonFetcher = JsonFetcher()
     
@@ -16,7 +16,7 @@ struct RandomListsView: View {
             List {
                 ForEach(jsonFetcher.fetchedData) { fetchedData in
                     NavigationLink(destination: FetchedDataView(image: fetchedData.image,
-                                                                title: fetchedData.title, text: fetchedData.text, newList: true)) {
+                                                                title: fetchedData.title, text: fetchedData.text, previousViewWasRandomDataList: true)) {
                         Image(systemName: fetchedData.image)
                             .renderingMode(.original)
                             .imageScale(.medium)
@@ -27,7 +27,7 @@ struct RandomListsView: View {
                 }
                 .onDelete (perform: removeRows)
             }
-            .navigationTitle("New Random Lists")
+            .navigationTitle("New Random Dinosaurs")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 if (jsonFetcher.isLoading == true){
@@ -52,7 +52,7 @@ struct RandomListsView_Previews: PreviewProvider {
     static let dataController = SavedListsView_Previews.dataController
     
     static var previews: some View {
-        RandomListsView()
+        RandomDataListView()
             .environment(\.managedObjectContext,
                           dataController.container.viewContext)
     }

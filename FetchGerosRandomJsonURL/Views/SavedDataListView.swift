@@ -8,36 +8,36 @@
 import SwiftUI
 
 
-struct SavedListsView: View {
+struct SavedDataListView: View {
     
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.date)]) var dinoLists: FetchedResults<Dinos>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date)]) var dinoElements: FetchedResults<Dinos>
     @Environment(\.managedObjectContext) var moc
     
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(dinoLists) { dinolist in
-                    NavigationLink(destination: FetchedDataView(image: dinolist.image ?? "x.circle.fill",
-                                                                title: dinolist.title ?? "No data", text: dinolist.text ?? "No data", newList: false)) {
-                        Image(systemName: dinolist.image ?? "x.circle.fill")
+                ForEach(dinoElements) { dinoElement in
+                    NavigationLink(destination: FetchedDataView(image: dinoElement.image ?? "x.circle.fill",
+                                                                title: dinoElement.title ?? "No data", text: dinoElement.text ?? "No data", previousViewWasRandomDataList: false)) {
+                        Image(systemName: dinoElement.image ?? "x.circle.fill")
                             .renderingMode(.original)
                             .imageScale(.medium)
-                        Text(dinolist.title ?? "No data")
+                        Text(dinoElement.title ?? "No data")
                             .font(.title)
                             .bold()
                     }
                 }
-                .onDelete(perform: deleteDinoList)
+                .onDelete(perform: deleteDinoListEntry)
             }
-            .navigationTitle("Saved Lists")
+            .navigationTitle("Saved Dinosaurs")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
     
-    func deleteDinoList (at offsets: IndexSet) {
+    func deleteDinoListEntry (at offsets: IndexSet) {
         for offset in offsets {
-            let list = dinoLists[offset]
+            let list = dinoElements[offset]
             moc.delete(list)
         }
         try? moc.save()
@@ -61,7 +61,7 @@ struct SavedListsView_Previews: PreviewProvider {
     
     static var previews: some View {
         let context = dataController.container.viewContext
-        SavedListsView()
+        SavedDataListView()
             .environment(\.managedObjectContext, context)
     }
 }

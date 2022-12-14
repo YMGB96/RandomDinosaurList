@@ -9,7 +9,7 @@ import Foundation
 
 class JsonFetcher: ObservableObject {
     
-    @Published var fetchedData = [FetchedDataFile]()
+    @Published var fetchedData = [FetchedDataElement]()
     @Published var isLoading = false
     
     func loadJson(){
@@ -20,7 +20,7 @@ class JsonFetcher: ObservableObject {
             }
             switch result {
             case .success(let data):
-                self.fetchedData.append(FetchedDataFile(image: data.icon, title: data.label, text: data.text))
+                self.fetchedData.append(FetchedDataElement(image: data.icon, title: data.label, text: data.text))
             case .failure(let error):
                 print(error)
             }
@@ -72,7 +72,7 @@ class JsonFetcher: ObservableObject {
 
 extension JsonFetcher {
     
-    struct FetchedDataFile: Identifiable { 
+    struct FetchedDataElement: Identifiable { 
         let id = UUID()
         let image: String
         let title: String

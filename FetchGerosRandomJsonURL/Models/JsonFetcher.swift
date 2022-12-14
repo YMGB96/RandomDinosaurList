@@ -46,11 +46,11 @@ class JsonFetcher: ObservableObject {
             }
             urlTask.resume()
         }
-        
+        //in case of emergency, a working url https://codingfromhell.net/swiftDemo/listElement/listElement?responseDelay=500&minWordCount=10&maxWordCount=10
         func semiRandomURLConstructor() -> URL {
             let responseDelay = Int.random(in: 200...2000)
             let minWordCount = Int.random(in: 10...30)
-            let maxWordCount = Int.random(in: minWordCount..<(minWordCount + 30))
+            let maxWordCount = Int.random(in: minWordCount...(minWordCount + 30))
             
             var urlComponents = URLComponents()
             urlComponents.scheme = "https"

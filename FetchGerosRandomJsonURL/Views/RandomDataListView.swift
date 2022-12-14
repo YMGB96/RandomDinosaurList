@@ -49,6 +49,7 @@ struct RandomDataListView: View {
                         ───██──██────
                         Please, I need friends...
                         """)
+                    .font(.caption)
                 }
             }
             .navigationTitle("New Random Dinosaurs")

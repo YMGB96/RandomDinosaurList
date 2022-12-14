@@ -28,7 +28,7 @@ struct SavedDataListView: View {
                             .bold()
                     }
                 }
-                .onDelete(perform: deleteDinoListEntry)
+                .onDelete(perform: deleteDinoElement)
                 if (dinoElements.count == 0) {
                     Text("""
                         ───────█████─
@@ -51,6 +51,7 @@ struct SavedDataListView: View {
                         ───██──██────
                         Are there no dinos good enough for you?
                         """)
+                    .font(.caption)
                 }
             }
             .navigationTitle("Saved Dinosaurs")
@@ -58,7 +59,7 @@ struct SavedDataListView: View {
         }
     }
     
-    func deleteDinoListEntry (at offsets: IndexSet) {
+    func deleteDinoElement (at offsets: IndexSet) {
         for offset in offsets {
             let list = dinoElements[offset]
             moc.delete(list)

@@ -134,12 +134,12 @@
 			isa = PBXGroup;
 			children = (
 				2152DCC42940A96B00ADB67E /* Dinos.xcdatamodeld */,
-				21A251A6293F552400F709F7 /* Views */,
-				21A251A5293F551900F709F7 /* Models */,
+				2152DCC72940A9E100ADB67E /* DataController.swift */,
 				210FCEE9292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift */,
+				21A251A5293F551900F709F7 /* Models */,
+				21A251A6293F552400F709F7 /* Views */,
 				210FCEED292F9F44003BBE30 /* Assets.xcassets */,
 				210FCEEF292F9F44003BBE30 /* Preview Content */,
-				2152DCC72940A9E100ADB67E /* DataController.swift */,
 			);
 			path = FetchGerosRandomJsonURL;
 			sourceTree = "<group>";
@@ -173,9 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				210FCEEB292F9F43003BBE30 /* ContentView.swift */,
-				210FCF172930BED0003BBE30 /* FetchedDataView.swift */,
 				2152DCC929431E8300ADB67E /* RandomDataListView.swift */,
 				2152DCCB29431EFA00ADB67E /* SavedDataListView.swift */,
+				210FCF172930BED0003BBE30 /* FetchedDataView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

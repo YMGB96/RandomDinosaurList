@@ -29,6 +29,29 @@ struct SavedDataListView: View {
                     }
                 }
                 .onDelete(perform: deleteDinoListEntry)
+                if (dinoElements.count == 0) {
+                    Text("""
+                        ───────█████─
+                        ──────███▄███
+                        ──────███████
+                        ──────███████
+                        ──────████───
+                        ──────██████─
+                        ─────█████───
+                        █───████████─
+                        ██─███████─█─
+                        ██████████───
+                        ██████████───
+                        ██████████───
+                        ─████████────
+                        ──██████─────
+                        ───██─██─────
+                        ───██──█─────
+                        ───█───█─────
+                        ───██──██────
+                        Are there no dinos good enough for you?
+                        """)
+                }
             }
             .navigationTitle("Saved Dinosaurs")
             .navigationBarTitleDisplayMode(.inline)

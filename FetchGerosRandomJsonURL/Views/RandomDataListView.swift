@@ -13,6 +13,7 @@ struct RandomDataListView: View {
     
     var body: some View {
         NavigationView {
+            
             List {
                 ForEach(jsonFetcher.fetchedData) { fetchedData in
                     NavigationLink(destination: FetchedDataView(image: fetchedData.image,
@@ -26,6 +27,29 @@ struct RandomDataListView: View {
                     }
                 }
                 .onDelete (perform: removeRows)
+                if (jsonFetcher.fetchedData.count == 0) {
+                    Text("""
+                        ───────█████─
+                        ──────███▄███
+                        ──────███████
+                        ──────███████
+                        ──────████───
+                        ──────██████─
+                        ─────█████───
+                        █───████████─
+                        ██─███████─█─
+                        ██████████───
+                        ██████████───
+                        ██████████───
+                        ─████████────
+                        ──██████─────
+                        ───██─██─────
+                        ───██──█─────
+                        ───█───█─────
+                        ───██──██────
+                        Please, I need friends...
+                        """)
+                }
             }
             .navigationTitle("New Random Dinosaurs")
             .navigationBarTitleDisplayMode(.inline)

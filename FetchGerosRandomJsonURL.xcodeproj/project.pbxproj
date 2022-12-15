@@ -20,6 +20,8 @@
 		2152DCC82940A9E100ADB67E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCC72940A9E100ADB67E /* DataController.swift */; };
 		2152DCCA29431E8300ADB67E /* RandomDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCC929431E8300ADB67E /* RandomDataListView.swift */; };
 		2152DCCC29431EFA00ADB67E /* SavedDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152DCCB29431EFA00ADB67E /* SavedDataListView.swift */; };
+		217AB8A2294B06EF00C89143 /* DataListSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AB8A1294B06EF00C89143 /* DataListSort.swift */; };
+		217AB8A4294B0AC900C89143 /* DataListSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AB8A3294B0AC900C89143 /* DataListSortView.swift */; };
 		21A251A4293DD9EE00F709F7 /* JsonFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A251A3293DD9EE00F709F7 /* JsonFetcher.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		2152DCC72940A9E100ADB67E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2152DCC929431E8300ADB67E /* RandomDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDataListView.swift; sourceTree = "<group>"; };
 		2152DCCB29431EFA00ADB67E /* SavedDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataListView.swift; sourceTree = "<group>"; };
+		217AB8A1294B06EF00C89143 /* DataListSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListSort.swift; sourceTree = "<group>"; };
+		217AB8A3294B0AC900C89143 /* DataListSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListSortView.swift; sourceTree = "<group>"; };
 		21A251A3293DD9EE00F709F7 /* JsonFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +169,7 @@
 			children = (
 				210FCF13292F9F7F003BBE30 /* JsonData.swift */,
 				21A251A3293DD9EE00F709F7 /* JsonFetcher.swift */,
+				217AB8A1294B06EF00C89143 /* DataListSort.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				2152DCC929431E8300ADB67E /* RandomDataListView.swift */,
 				2152DCCB29431EFA00ADB67E /* SavedDataListView.swift */,
 				210FCF172930BED0003BBE30 /* FetchedDataView.swift */,
+				217AB8A3294B0AC900C89143 /* DataListSortView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,12 +363,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2152DCC82940A9E100ADB67E /* DataController.swift in Sources */,
+				217AB8A2294B06EF00C89143 /* DataListSort.swift in Sources */,
 				210FCF182930BED0003BBE30 /* FetchedDataView.swift in Sources */,
 				210FCEEC292F9F43003BBE30 /* ContentView.swift in Sources */,
 				2152DCCA29431E8300ADB67E /* RandomDataListView.swift in Sources */,
 				2152DCCC29431EFA00ADB67E /* SavedDataListView.swift in Sources */,
 				21A251A4293DD9EE00F709F7 /* JsonFetcher.swift in Sources */,
 				210FCEEA292F9F43003BBE30 /* FetchGerosRandomJsonURLApp.swift in Sources */,
+				217AB8A4294B0AC900C89143 /* DataListSortView.swift in Sources */,
 				210FCF14292F9F7F003BBE30 /* JsonData.swift in Sources */,
 				2152DCC62940A96B00ADB67E /* Dinos.xcdatamodeld in Sources */,
 			);

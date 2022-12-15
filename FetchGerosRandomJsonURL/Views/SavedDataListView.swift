@@ -10,8 +10,15 @@ import SwiftUI
 
 struct SavedDataListView: View {
     
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.date)]) var dinoElements: FetchedResults<Dinos>
+    enum sortingScheme {
+        case dateAsc
+        case dateDesc
+    }
+    
+    
+    @FetchRequest(sortDescriptors: DataListSort.defaultSort.sortDescriptors) var dinoElements: FetchedResults<Dinos>
     @Environment(\.managedObjectContext) var moc
+    @State private var selectedSort = DataListSort.defaultSort
     
     
     var body: some View {
@@ -56,6 +63,15 @@ struct SavedDataListView: View {
             }
             .navigationTitle("Saved Dinosaurs")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                DataListSortView(selectedSortRule: $selectedSort, sorts: DataListSort.sorts)
+                    .onChange(of: selectedSort) { _ in
+                        dinoElements.sortDescriptors = selectedSort.sortDescriptors
+                    }
+            }
+            .onDisappear() {
+                dinoElements.sortDescriptors = DataListSort.defaultSort.sortDescriptors
+            }
         }
     }
     

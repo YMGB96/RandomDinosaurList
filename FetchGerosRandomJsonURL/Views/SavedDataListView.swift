@@ -68,9 +68,9 @@ struct SavedDataListView: View {
                     .onChange(of: selectedSort) { _ in
                         dinoElements.sortDescriptors = selectedSort.sortDescriptors
                     }
-                    .onAppear() {
-                        dinoElements.sortDescriptors = selectedSort.sortDescriptors
-                    }
+            }
+            .onAppear() {
+                dinoElements.sortDescriptors = selectedSort.sortDescriptors
             }
         }
     }
